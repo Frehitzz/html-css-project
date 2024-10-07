@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: black;
+            }
+            li{
+                display: inline;
+                padding: 50px;
+              
+            }
+            #header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                color:  black;
+                background-color: rgb(245, 245, 117);
+            }
+            .bgimage{
+                background-image: url(https://www.ipophil.gov.ph/wp-content/uploads/2019/08/phil-flag-as-a-trademark.jpg);
+                background-size: cover;
+                height:600px;
+                background-position: top;
+               
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .text-image{
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 40px;
+                
+            }
+            .text-image .blue{
+                color: blue;
+            }
+            .text-image .yellow{
+                color: yellow;
+            }
+            .text-image .red{
+                color: red;
+            }
+            .text-image .white{
+                color: white;
+            }
+            .places-box{
+                display: flex;
+                padding: 50px;
+                margin: 10px;
+                border-radius: 10px;
+                border-color: antiquewhite;
+                box-shadow: 0;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 30px;
+                color: white;
+                
+            }
+            .places{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            }
+            .title-places{
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 40px;
+                color: white;
+            }
+            #palawan{
+                background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1611120941/blog/bjdi3fqkqb9i0c1skqlz.webp);
+                background-size: cover;
+                background-position: bottom left;
+            }
+            #batangas{
+                background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1607469291/blog/fgqpvpwgwoihdk6bbig9.webp);
+                background-size: cover;
+                background-position: bottom left;
+            }
+            #manila{
+                background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1619165254/blog/iv52gb1ix1ti2q6vgl0j.webp);
+                background-size: cover;
+                background-position: bottom center;
+            }
+            #batanes{
+                background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1612341069/blog/tsgdjy9dhximpny65qqw.webp);
+                background-size: cover;
+                background-position: bottom center;
+            }
+            .anthem{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .anthem-title{
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 40px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <nav>
+            <div id="header">
+                <h1>Philippines</h1>
+            <ul>
+               
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="bgimage">
+            <div class="text-image">
+            <h2><span class="blue">This is</span><span class="yellow"> the</span><span class="white"> Philippine</span><span class="red"> Flag</span></h2>
+        </div>
+        </div>
+        <h1 align="center" class="title-places">Tourist Spots in the Philippines</h1>
+            <div class="places">
+               
+                    
+               
+                <div class="places-box" id="palawan">
+                    <h1>Palawan</h1>
+                </div>
+                <div class="places-box" id="batangas">
+                    <h1>Batangas</h1>
+                </div>
+                <div class="places-box" id="manila">
+                    <h1>Manila</h1>
+                </div>
+                <div class="places-box" id="batanes">
+                    <h1>Batanes</h1>
+                </div>
+            </div>
+            <h1 class="anthem-title">National Anthem</h1>
+            <div class="anthem">
+                
+                <iframe width=" 820" height="515"
+                    src="https://www.youtube.com/embed/H_t0h4IIt2Q?autoplay=1">
+                </iframe>
+            </div>
+    </body>
+</html>
