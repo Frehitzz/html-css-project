@@ -11,8 +11,18 @@
             li{
                 display: inline;
                 padding: 50px;
-              
+                font-weight: 500;
             }
+            a{
+                color: black;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a:hover{
+                color: blue;
+            }
+            
             #header{
                 display: flex;
                 align-items: center;
@@ -32,6 +42,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+              
             }
             .text-image{
                 font-family: "Roboto", sans-serif;
@@ -62,7 +73,7 @@
                 font-family: "Roboto", sans-serif;
                 font-weight: 700;
                 font-style: normal;
-                font-size: 30px;
+                font-size: 20px;
                 color: white;
                 
             }
@@ -71,33 +82,143 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            
+            }
+            .places-container{
+                background-image: url(https://vietchallenge.com/images/uploads/john-hernandez-IL-fBBnF-GU-unsplash-2-scaled.jpg);
+                padding: 100px;
+                background-size: cover;
+                
             }
             .title-places{
                 font-family: "Roboto", sans-serif;
                 font-weight: 700;
                 font-style: normal;
-                font-size: 40px;
+                font-size: 70px;
                 color: white;
+                padding-bottom: 100px;
             }
             #palawan{
+                position: relative;
                 background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1611120941/blog/bjdi3fqkqb9i0c1skqlz.webp);
                 background-size: cover;
                 background-position: bottom left;
+                height: 170px;
+                width: 170px;
+                transition: 0.8s;
+               
             }
+            .palawan-desc{
+                position: absolute;
+                top: 300px;
+                bottom: 0px;
+                left: 0;
+                right: 100px;
+                color: #fff;
+                visibility: hidden;
+                font-size: 30px;
+                padding: 20px;
+
+                
+                
+            }
+
             #batangas{
+                position: relative;
                 background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1607469291/blog/fgqpvpwgwoihdk6bbig9.webp);
                 background-size: cover;
                 background-position: bottom left;
+                height: 170px;
+                width: 170px;
+                transition: 0.8s;
+            }
+            .batangas-desc{
+                position: absolute;
+                top: 300px;
+                bottom: 0px;
+                left: 0;
+                right: 100px;
+                color: #fff;
+                visibility: hidden;
+                font-size: 30px;
+                padding: 20px;
+
+                
+                
             }
             #manila{
+                position: relative;
                 background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1619165254/blog/iv52gb1ix1ti2q6vgl0j.webp);
                 background-size: cover;
                 background-position: bottom center;
+                height: 170px;
+                width: 170px;
+                transition: 0.8s;
+            }
+            .manila-desc{
+                position: absolute;
+                top: 300px;
+                bottom: 0px;
+                left: 0;
+                right: 100px;
+                color: #fff;
+                visibility: hidden;
+                font-size: 30px;
+                padding: 20px;
             }
             #batanes{
+                position: relative;
                 background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1612341069/blog/tsgdjy9dhximpny65qqw.webp);
                 background-size: cover;
                 background-position: bottom center;
+                height: 170px;
+                width: 170px;
+                transition: 0.8s;
+            }
+            .batanes-desc{
+                position: absolute;
+                top: 300px;
+                bottom: 0px;
+                left: 0;
+                right: 100px;
+                color: #fff;
+                visibility: hidden;
+                font-size: 30px;
+                padding: 20px;
+            }
+            #palawan:hover{
+                height: 500px;
+                width: 500px;
+                 
+            }
+            #batangas:hover{
+                height: 500px;
+                width: 500px;
+            }
+            #manila:hover{
+                height: 500px;
+                width: 500px;
+            }
+            #batanes:hover{
+                height: 500px;
+                width: 500px;
+            }
+            #palawan:hover .palawan-desc{
+                visibility: visible;
+                transition-delay: 0.5s; /*para matago yung text hanggang matapos yung animation sa box*/
+                
+            }
+            #batangas:hover .batangas-desc{
+                visibility: visible;
+                transition-delay: 0.5s;
+            }
+            #manila:hover .manila-desc{
+                visibility: visible;
+                transition-delay: 0.5s;
+            }
+            #batanes:hover .batanes-desc{
+                visibility: visible;
+                transition-delay: 0.5s;
             }
             .anthem{
                 display: flex;
@@ -116,6 +237,47 @@
                 font-style: normal;
                 font-size: 40px;
             }
+            .anthem-container{
+                background-image: url(https://static01.nyt.com/images/2017/06/27/world/28xp-anthem2/28xp-anthem2-jumbo.jpg?quality=75&auto=webp);
+                padding: 100px;
+                background-size: cover;
+            }
+            .president{
+                display:flex;
+                width: 400px;
+                height: 400px;
+                background-color: aliceblue;
+                align-items: center;
+                margin: 20px;
+                border-radius: 20px;
+                padding-left: 10px;
+            }
+            .president img{
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0 10px 10px 0;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 17px;
+            }
+            .pres-container{
+                background-image: url(https://eu-images.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt5e8b8696682453b2/66fe7704a03c7d060ce7159e/Philippines_imposes_12_VAT_on_foreign_digital_services_providers.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale);
+                background-size: cover;
+                padding: 100px;
+                background-position: center;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 50px;
+            }
+
         </style>
     </head>
     <body>
@@ -137,24 +299,34 @@
             <h2><span class="blue">This is</span><span class="yellow"> the</span><span class="white"> Philippine</span><span class="red"> Flag</span></h2>
         </div>
         </div>
+        <div class="places-container">
         <h1 align="center" class="title-places">Tourist Spots in the Philippines</h1>
             <div class="places">
-               
-                    
-               
                 <div class="places-box" id="palawan">
                     <h1>Palawan</h1>
+                    <p class="palawan-desc">Palawan is a world-renowned destination for its breathtaking land and seascapes, 
+                        offering unparalleled cultural, adventure, and nature experiences.</p>
                 </div>
                 <div class="places-box" id="batangas">
                     <h1>Batangas</h1>
+                    <p class="batangas-desc">Batangas is a trade and food-processing centre for an agricultural area made fertile by 
+                        volcanic soil—rice, sugarcane, and coconuts being the major crops and beef cattle the major livestock.</p>
                 </div>
                 <div class="places-box" id="manila">
                     <h1>Manila</h1>
+                    <p class="manila-desc">Manila has been the principal city of the Philippines for four centuries and is the centre of its 
+                        industrial development as well as the international port of entry. It is situated on one of the finest 
+                        sheltered harbours of the Pacific region, about 700 miles (1,100 km) southeast of Hong Kong</p>
                 </div>
                 <div class="places-box" id="batanes">
                     <h1>Batanes</h1>
+                    <p class="batanes-desc">The Batanes group of islands is located at the northernmost tip of Philippine territory. 
+                        It is known for its scenic waters and terrain and clean environment. Batanes is also recognized
+                         for the unique culture of the islands' first settlers, the Ivatans.</p>
                 </div>
             </div>
+        </div>
+        <div class="anthem-container">
             <h1 class="anthem-title">National Anthem</h1>
             <div class="anthem">
                 
@@ -162,5 +334,31 @@
                     src="https://www.youtube.com/embed/H_t0h4IIt2Q?autoplay=1">
                 </iframe>
             </div>
-    </body>
+        </div>
+            <div class="pres-container">
+            <h1 style="color: white;" align="center" style="padding-top: 90px;">President of the Philippines</h1>
+            <div class="container">
+            <div class="president" >
+                <div class="text-pres">
+                <h1>Ferdinand Romualdez Marcos Jr.</h1>
+                <p>In 1980, Marcos became Vice Governor of Ilocos Norte, running unopposed with 
+                    the Kilusang Bagong Lipunan party of his father, who was ruling the
+                     Philippines under martial law at the time.[9</p>
+                    </div>
+                     <img class="marcos" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Ferdinand_R._Marcos_Jr_%28cropped%29.jpg">     
+
+                </div>
+                <div class="president" >
+                    <div class="text-pres">
+                    <h1 class="">Rodrigo Roa Duterte</h1>
+                    <p>Born in Maasin, Leyte (now in Southern Leyte), Duterte moved to Davao as a child where his father, 
+                        Vicente Duterte, served as provincial governor. He studied political science at the Lyceum of the 
+                        Philippines University, graduating in 1968, before obtaining a law degree from San Beda College of Law in 197</p>
+                        </div>
+                         <img class="marcos" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/President_Rodrigo_Duterte_portrait_%28cropped%29.jpg">     
+    
+                    </div>
+                </div>
+            </div>
+    </body> 
 </html>
